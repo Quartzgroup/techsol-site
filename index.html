@@ -2,28 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Techsol Soluções em Tecnologia | Engenharia Aplicada do Ecossistema Quartzgroup</title>
+  <title>Techsol Soluções em Tecnologia | Engenharia & Tecnologias Aplicadas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Techsol Soluções em Tecnologia – unidade de engenharia aplicada e inovação do Ecossistema Quartzgroup. Projetos em energia renovável, construções inteligentes, TIC, infraestrutura digital crítica (incluindo apoio a data centers) e tecnologias de impacto ambiental." />
+  <meta name="description" content="Techsol Soluções em Tecnologia – empresa de engenharia e tecnologias aplicadas que integra o Ecossistema Quartzgroup. Atuação em energia sustentável, infraestrutura digital, projetos tecnológicos e serviços para empresas de data center no Centro-Oeste." />
 
   <style>
     :root {
       --bg-body: #020617;
-      --bg-surface: #0b1220;
+      --bg-surface: #0b1120;
       --bg-soft: #020617;
       --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.12);
       --accent-strong: #0ea5e9;
+      --accent-soft: rgba(56, 189, 248, 0.12);
       --text-main: #e5e7eb;
       --text-soft: #9ca3af;
       --text-mute: #6b7280;
       --border-soft: rgba(148, 163, 184, 0.3);
       --card-border: rgba(148, 163, 184, 0.4);
-      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.8);
+      --shadow-soft: 0 20px 50px rgba(15, 23, 42, 0.8);
       --radius-lg: 18px;
       --radius-pill: 999px;
-      --nav-height: 72px;
+      --nav-height: 70px;
       --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, sans-serif;
     }
@@ -43,7 +43,7 @@
       font-family: var(--font-sans);
       background: radial-gradient(circle at top, #020617 0, #020617 40%, #000 100%);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -86,18 +86,19 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
+      height: var(--nav-height);
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .brand-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
       background: radial-gradient(circle at 30% 20%, #38bdf8, transparent 55%),
         radial-gradient(circle at 70% 80%, #22c55e, transparent 60%),
         radial-gradient(circle at 120% -20%, #facc15, transparent 55%);
@@ -107,7 +108,7 @@
     }
 
     .brand-text h1 {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #e5e7eb;
@@ -115,15 +116,15 @@
 
     .brand-text span {
       display: block;
-      font-size: 0.72rem;
+      font-size: 0.85rem;
       color: var(--text-soft);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 18px;
-      font-size: 0.9rem;
+      gap: 22px;
+      font-size: 0.95rem;
     }
 
     .nav-links a {
@@ -136,7 +137,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -2px;
+      bottom: -3px;
       width: 0;
       height: 2px;
       border-radius: 999px;
@@ -156,46 +157,42 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 7px 14px;
+      padding: 8px 16px;
       border-radius: var(--radius-pill);
       background: linear-gradient(135deg, #22c55e, #38bdf8);
       color: #020617;
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       font-weight: 600;
       box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
       border: 1px solid rgba(15, 23, 42, 0.6);
     }
 
-    .nav-cta span {
-      font-size: 0.9rem;
-    }
-
     /* HERO */
 
     .hero {
-      padding-top: 42px;
+      padding-top: 40px;
       padding-bottom: 40px;
     }
 
     .hero-inner {
       display: grid;
-      grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
       gap: 32px;
       align-items: center;
     }
 
     .kicker {
-      font-size: 0.8rem;
-      letter-spacing: 0.22em;
+      font-size: 0.9rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 10px;
     }
 
     .hero h2 {
-      font-size: clamp(2.2rem, 4vw, 2.8rem);
+      font-size: clamp(2.3rem, 4vw, 2.8rem);
       line-height: 1.15;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     .hero-gradient {
@@ -206,10 +203,10 @@
     }
 
     .hero-subtitle {
-      font-size: 1rem;
+      font-size: 1.02rem;
       color: var(--text-soft);
-      max-width: 520px;
-      margin-bottom: 18px;
+      max-width: 560px;
+      margin-bottom: 20px;
     }
 
     .hero-badges {
@@ -223,8 +220,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.78rem;
-      padding: 4px 10px;
+      font-size: 0.9rem;
+      padding: 6px 12px;
       border-radius: var(--radius-pill);
       background: rgba(15, 23, 42, 0.9);
       border: 1px solid rgba(148, 163, 184, 0.8);
@@ -232,8 +229,8 @@
     }
 
     .badge-dot {
-      width: 6px;
-      height: 6px;
+      width: 7px;
+      height: 7px;
       border-radius: 999px;
       background: #22c55e;
       box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.35);
@@ -253,7 +250,7 @@
       justify-content: center;
       gap: 8px;
       border-radius: var(--radius-pill);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 500;
       padding: 9px 18px;
       border: 1px solid transparent;
@@ -287,129 +284,74 @@
     }
 
     .hero-footnote {
-      font-size: 0.78rem;
+      font-size: 0.9rem;
       color: var(--text-mute);
     }
 
-    .hero-diagram {
-      background: radial-gradient(circle at 10% 0, rgba(56, 189, 248, 0.35), transparent 55%),
-        radial-gradient(circle at 90% 100%, rgba(34, 197, 94, 0.35), transparent 58%);
-      border-radius: 26px;
+    .hero-panel {
+      background: radial-gradient(circle at 10% 0, rgba(56, 189, 248, 0.3), transparent 55%),
+        radial-gradient(circle at 90% 100%, rgba(34, 197, 94, 0.3), transparent 58%);
+      border-radius: 24px;
       border: 1px solid rgba(148, 163, 184, 0.5);
       box-shadow: var(--shadow-soft);
       padding: 18px 18px 16px;
     }
 
-    .diagram-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .diagram-title {
-      font-size: 0.86rem;
+    .hero-panel-title {
+      font-size: 0.9rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.16em;
       color: #e5e7eb;
+      margin-bottom: 8px;
     }
 
-    .diagram-tag {
-      font-size: 0.76rem;
-      padding: 3px 9px;
-      border-radius: var(--radius-pill);
-      background: rgba(15, 23, 42, 0.88);
-      border: 1px solid rgba(148, 163, 184, 0.5);
+    .hero-panel-text {
+      font-size: 0.95rem;
       color: var(--text-soft);
-    }
-
-    .diagram-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
       margin-bottom: 10px;
     }
 
-    .diagram-card {
-      border-radius: 14px;
-      padding: 10px 11px;
-      background: rgba(2, 6, 23, 0.92);
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      font-size: 0.8rem;
-    }
-
-    .diagram-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-mute);
-      margin-bottom: 2px;
-    }
-
-    .diagram-main {
-      font-weight: 500;
-      color: var(--text-main);
-      margin-bottom: 2px;
-    }
-
-    .diagram-sub {
-      font-size: 0.78rem;
-      color: var(--text-soft);
-    }
-
-    .diagram-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.78rem;
-      color: var(--text-soft);
-    }
-
-    .diagram-dot-row {
+    .hero-panel-tag {
       display: inline-flex;
-      gap: 4px;
-      align-items: center;
-    }
-
-    .diagram-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 999px;
-      background: rgba(148, 163, 184, 0.7);
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.92);
+      color: var(--text-soft);
     }
 
     /* SHARED SECTION STYLES */
 
     section {
-      padding: 34px 0;
+      padding: 36px 0;
       border-top: 1px solid rgba(15, 23, 42, 0.85);
     }
 
     .section-heading {
-      font-size: 0.8rem;
-      letter-spacing: 0.2em;
+      font-size: 0.9rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--text-mute);
       margin-bottom: 6px;
     }
 
     .section-title {
-      font-size: 1.35rem;
-      margin-bottom: 8px;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
     }
 
     .section-lead {
-      font-size: 0.96rem;
+      font-size: 1rem;
       color: var(--text-soft);
-      max-width: 640px;
-      margin-bottom: 18px;
+      max-width: 720px;
+      margin-bottom: 20px;
     }
 
     .columns-2 {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.4fr);
-      gap: 22px;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr);
+      gap: 24px;
       align-items: flex-start;
     }
 
@@ -417,18 +359,18 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 3px 9px;
+      padding: 4px 11px;
       border-radius: var(--radius-pill);
       background: rgba(15, 23, 42, 0.96);
       border: 1px solid rgba(148, 163, 184, 0.6);
-      font-size: 0.76rem;
+      font-size: 0.9rem;
       color: var(--text-soft);
       margin-bottom: 12px;
     }
 
     .pill-dot {
-      width: 6px;
-      height: 6px;
+      width: 7px;
+      height: 7px;
       border-radius: 999px;
       background: var(--accent);
     }
@@ -436,109 +378,103 @@
     .card-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
+      gap: 16px;
     }
 
     .card {
       background: rgba(15, 23, 42, 0.96);
       border-radius: var(--radius-lg);
       border: 1px solid var(--card-border);
-      padding: 13px 14px;
+      padding: 16px 16px 14px;
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.75);
     }
 
     .card h3 {
-      font-size: 0.98rem;
+      font-size: 1.05rem;
       margin-bottom: 6px;
     }
 
     .card p {
-      font-size: 0.9rem;
+      font-size: 0.98rem;
       color: var(--text-soft);
       margin-bottom: 6px;
     }
 
     .card ul {
-      padding-left: 16px;
+      padding-left: 18px;
       margin-top: 4px;
     }
 
     .card li {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--text-soft);
-      margin-bottom: 2px;
+      margin-bottom: 3px;
       list-style: disc;
     }
 
-    /* ECOSSISTEMA & PROJETOS */
+    /* DATA CENTERS */
 
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .chip {
-      font-size: 0.78rem;
-      padding: 4px 9px;
-      border-radius: var(--radius-pill);
-      background: rgba(15, 23, 42, 0.96);
+    .highlight-box {
+      border-radius: 18px;
       border: 1px solid rgba(148, 163, 184, 0.6);
-      color: var(--text-soft);
+      background: rgba(15, 23, 42, 0.96);
+      padding: 16px 16px 14px;
+      margin-bottom: 18px;
     }
 
-    .projects-list {
+    .highlight-quote {
+      font-size: 1rem;
+      color: var(--accent-strong);
+      font-weight: 500;
+    }
+
+    .three-cols {
       display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr);
-      gap: 18px;
-      margin-top: 10px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
     }
 
-    .projects-list ul {
-      padding-left: 16px;
-    }
-
-    .projects-list li {
-      font-size: 0.9rem;
+    .mini-card {
+      background: rgba(15, 23, 42, 0.96);
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      padding: 12px 12px 10px;
+      font-size: 0.95rem;
       color: var(--text-soft);
-      list-style: disc;
+    }
+
+    .mini-card h4 {
+      font-size: 1rem;
       margin-bottom: 4px;
+      color: var(--text-main);
     }
 
     /* PARCERIAS & CONTATO */
 
-    .partnership-box {
-      background: rgba(15, 23, 42, 0.96);
-      border-radius: var(--radius-lg);
-      border: 1px dashed rgba(148, 163, 184, 0.6);
-      padding: 16px 15px;
-      margin-top: 8px;
-    }
-
     .contact-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr);
-      gap: 18px;
+      gap: 22px;
     }
 
     .contact-item {
-      font-size: 0.92rem;
+      font-size: 0.98rem;
       color: var(--text-soft);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .contact-label {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.15em;
       color: var(--text-mute);
+      margin-bottom: 2px;
     }
 
     .contact-highlight {
-      font-size: 0.96rem;
+      font-size: 1rem;
       color: var(--text-main);
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     .btn-secondary {
@@ -547,7 +483,7 @@
       justify-content: center;
       gap: 8px;
       border-radius: var(--radius-pill);
-      font-size: 0.86rem;
+      font-size: 0.95rem;
       padding: 8px 16px;
       border: 1px solid var(--accent);
       color: var(--accent);
@@ -563,8 +499,8 @@
     footer {
       border-top: 1px solid rgba(15, 23, 42, 0.95);
       background: #020617;
-      padding: 14px 0 20px;
-      font-size: 0.8rem;
+      padding: 16px 0 20px;
+      font-size: 0.9rem;
       color: var(--text-mute);
     }
 
@@ -582,12 +518,12 @@
     .footer-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
     }
 
     .footer-links a {
       color: var(--text-soft);
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     .footer-links a:hover {
@@ -599,8 +535,12 @@
     @media (max-width: 900px) {
       .hero-inner,
       .columns-2,
-      .projects-list,
+      .card-grid,
       .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .three-cols {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -608,12 +548,12 @@
         padding-top: 28px;
       }
 
-      .hero-diagram {
+      .hero-panel {
         order: -1;
       }
 
       .nav-links {
-        display: none; /* simplificação: menu compacto em mobile */
+        display: none;
       }
 
       .nav-bar {
@@ -622,10 +562,6 @@
     }
 
     @media (max-width: 600px) {
-      .card-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
       .hero-actions {
         flex-direction: column;
         align-items: stretch;
@@ -641,16 +577,16 @@
         <div class="brand-mark"></div>
         <div class="brand-text">
           <h1>TECHSOL</h1>
-          <span>Engenharia aplicada · Ecossistema Quartzgroup</span>
+          <span>Engenharia & tecnologias aplicadas</span>
         </div>
       </div>
       <nav class="nav-links">
-        <a href="#home">Home</a>
+        <a href="#home">Início</a>
         <a href="#quem-somos">Quem Somos</a>
-        <a href="#areas">Áreas de Atuação</a>
-        <a href="#ecossistema">Ecossistema Quartzgroup</a>
-        <a href="#projetos">Projetos & Casos</a>
-        <a href="#parcerias">Parcerias & ICT</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#data-centers">Data Centers</a>
+        <a href="#ecossistema">Ecossistema</a>
+        <a href="#parcerias">Parcerias</a>
         <a href="#contato" class="nav-cta">
           <span>Falar com a Techsol</span>
         </a>
@@ -664,35 +600,33 @@
       <section class="hero">
         <div class="hero-inner">
           <div>
-            <div class="kicker">Unidade de engenharia do Ecossistema Quartzgroup</div>
+            <div class="kicker">Engenharia aplicada · Energia · Infraestrutura digital</div>
             <h2>
               <span class="hero-gradient">Techsol Soluções em Tecnologia</span><br />
-              Engenharia aplicada para um Brasil mais inteligente, conectado e sustentável.
+              Engenharia e tecnologia conectadas ao mundo real.
             </h2>
             <p class="hero-subtitle">
-              Unidade de tecnologia e engenharia do Ecossistema Quartzgroup,
-              conectando pesquisa, inovação e implementação em projetos de alto impacto
-              em energia, cidades inteligentes e infraestrutura digital crítica
-              (incluindo apoio a data centers sustentáveis no Centro-Oeste).
+              Empresa de engenharia e tecnologias aplicadas que integra o Ecossistema Quartzgroup.
+              A partir do Brasil, conecta energia sustentável, infraestrutura digital e projetos tecnológicos
+              para clientes dos setores público e privado.
             </p>
 
             <div class="hero-badges">
               <div class="badge">
                 <span class="badge-dot"></span>
-                Base científica e trajetória em P&amp;D do Ecossistema Quartzgroup
+                Base científica conectada ao Ecossistema Quartzgroup e ao IFT
               </div>
               <div class="badge">
                 <span class="badge-dot"></span>
-                Integração com o IFT – Instituto de Formação e Tecnologia
+                Foco em energia renovável e eficiência energética
               </div>
               <div class="badge">
                 <span class="badge-dot"></span>
-                Foco em energia renovável, TIC e infraestrutura crítica de tecnologia
+                Atuação a partir do Centro-Oeste brasileiro
               </div>
             </div>
 
             <div class="hero-actions">
-              <!-- TODO: ajuste o e-mail abaixo quando o Zoho estiver pronto -->
               <a class="btn-primary" href="mailto:contato@techsolsolutions.com.br">
                 Falar com a Techsol
               </a>
@@ -702,45 +636,19 @@
             </div>
 
             <div class="hero-footnote">
-              Projetos em energia renovável, cidades inteligentes, indústria 4.0,
-              tecnologias da informação, infraestrutura digital crítica e impacto ambiental –
-              incluindo apoio a hubs tecnológicos e iniciativas de data centers sustentáveis.
+              Projetos em energia sustentável, infraestrutura digital, tecnologias aplicadas e serviços em parceria
+              para empresas e iniciativas de data center.
             </div>
           </div>
 
-          <aside class="hero-diagram" aria-label="Mapa de posicionamento Techsol no Ecossistema Quartzgroup">
-            <div class="diagram-header">
-              <div>
-                <div class="diagram-title">Arquitetura viva de atuação</div>
-              </div>
-              <div class="diagram-tag">Quartzgroup Ecosystem</div>
-            </div>
-            <div class="diagram-grid">
-              <div class="diagram-card">
-                <div class="diagram-label">Posicionamento</div>
-                <div class="diagram-main">Engenharia aplicada &amp; soluções</div>
-                <div class="diagram-sub">
-                  Projetos que conectam território, pessoas e tecnologia.
-                </div>
-              </div>
-              <div class="diagram-card">
-                <div class="diagram-label">Integração</div>
-                <div class="diagram-main">IFT · ICT em formação</div>
-                <div class="diagram-sub">
-                  P&amp;D, formação e governança técnico-científica.
-                </div>
-              </div>
-            </div>
-            <div class="diagram-footer">
-              <div>
-                <span style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-mute);">Eixos principais</span>
-                <div style="font-size:0.8rem;">Energia · Cidades · TIC · Data centers · Meio ambiente</div>
-              </div>
-              <div class="diagram-dot-row">
-                <span class="diagram-dot"></span>
-                <span class="diagram-dot"></span>
-                <span class="diagram-dot"></span>
-              </div>
+          <aside class="hero-panel" aria-label="Resumo de atuação da Techsol">
+            <div class="hero-panel-title">Onde atuamos</div>
+            <p class="hero-panel-text">
+              Tecnologia aplicada, energia renovável, infraestrutura digital e impacto ambiental –
+              com operações a partir do Centro-Oeste e conexão com parceiros no Brasil e no exterior.
+            </p>
+            <div class="hero-panel-tag">
+              Integra o Ecossistema Quartzgroup · Em diálogo constante com o IFT – Instituto de Formação e Tecnologia
             </div>
           </aside>
         </div>
@@ -750,114 +658,131 @@
       <section id="quem-somos">
         <div class="section-heading">Quem Somos</div>
         <h2 class="section-title">Quem é a Techsol</h2>
-        <p class="section-lead">
-          A Techsol Soluções em Tecnologia é a unidade de engenharia aplicada e inovação
-          tecnológica do Ecossistema Quartzgroup, atuando em projetos que integram tecnologia,
-          sustentabilidade, infraestrutura digital crítica e desenvolvimento regional.
-        </p>
-
         <div class="columns-2">
           <div>
+            <p class="section-lead">
+              A Techsol Soluções em Tecnologia foi criada para gerir e executar projetos e pesquisas em tecnologia
+              com base em engenharia e tecnologias aplicadas.
+            </p>
             <p>
-              Nascemos no Brasil, com foco em projetos que conectam empresas, governos, ICTs
-              e universidades. Combinamos experiência em consultoria estratégica, engenharia,
-              TI, governança digital e formação de pessoas, transformando ideias em soluções
-              concretas: usinas renováveis, infraestruturas inteligentes, monitoramento
-              ambiental, plataformas digitais, hubs tecnológicos e apoio a projetos de
-              data centers e conectividade.
+              Sua missão abrange atuação nos setores como construção civil, tecnologias emergentes,
+              energias sustentáveis (solar, eólica, biomassa), biotecnologia, agrotecnologia,
+              tecnologia em saúde e impactos ambientais de soluções tecnológicas.
             </p>
           </div>
           <div>
-            <div class="pill">
-              <span class="pill-dot"></span>
-              Pilares estratégicos de atuação
-            </div>
-            <div class="card">
-              <h3>Engenharia Aplicada</h3>
-              <p>
-                Projetos e implantação com visão de ciclo completo, da concepção à operação,
-                integrando tecnologia, gestão e resultados.
-              </p>
-            </div>
-            <div class="card" style="margin-top:10px;">
-              <h3>Inovação &amp; P&amp;D</h3>
-              <p>
-                Conexão direta com o IFT e com parceiros científicos para estruturar pesquisa
-                aplicada, validação tecnológica e transferência de conhecimento.
-              </p>
-            </div>
-            <div class="card" style="margin-top:10px;">
-              <h3>Impacto Socioambiental</h3>
-              <p>
-                Tecnologia a serviço do território, das pessoas e do meio ambiente, com foco
-                em projetos de desenvolvimento sustentável e inteligência territorial.
-              </p>
-            </div>
+            <p>
+              Integrando o Ecossistema Quartzgroup e em diálogo constante com o IFT – Instituto de Formação e Tecnologia,
+              a Techsol atua como elo entre concepção e implementação: organiza, projeta e entrega soluções que conectam
+              dados, infraestrutura, energia e operações em campo, tanto em projetos próprios quanto em iniciativas
+              conduzidas em parceria com outras instituições.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- ÁREAS DE ATUAÇÃO -->
-      <section id="areas">
-        <div class="section-heading">Áreas de Atuação</div>
+      <!-- ATUAÇÃO -->
+      <section id="atuacao">
+        <div class="section-heading">Atuação</div>
         <h2 class="section-title">O que fazemos</h2>
         <p class="section-lead">
-          Atuamos em quatro grandes eixos de tecnologia e engenharia, orientados a resultados
-          concretos e mensuráveis.
+          A Techsol trabalha com engenharia e tecnologias aplicadas em diferentes setores, sempre conectando
+          energia, dados, infraestrutura e impacto territorial.
         </p>
 
         <div class="card-grid">
           <div class="card">
-            <h3>Energia Renovável &amp; Eficiência Energética</h3>
+            <h3>Engenharia & Projetos Tecnológicos</h3>
             <p>
-              Soluções para um uso inteligente e sustentável da energia em edificações,
-              indústrias e territórios.
+              Estruturação e execução de projetos de tecnologia com base em engenharia aplicada,
+              integrando conceitos, protótipos e operações.
             </p>
             <ul>
-              <li>Estudos de viabilidade técnico-econômica.</li>
-              <li>Integração de fontes renováveis a sistemas existentes.</li>
-              <li>Otimização de consumo em prédios, plantas industriais e infraestrutura.</li>
-              <li>Arquitetura energética para infraestruturas críticas de TI (como data centers), com integração de fontes renováveis e estratégias de autoprodução.</li>
+              <li>Planejamento e gestão de projetos em tecnologia.</li>
+              <li>Desenvolvimento de soluções e MVPs em diálogo com o Ecossistema Quartzgroup.</li>
+              <li>Integração entre dados, IA, infraestrutura e operações em campo.</li>
             </ul>
           </div>
+
           <div class="card">
-            <h3>Construções Inteligentes &amp; Sustentáveis</h3>
+            <h3>Energia Sustentável & Eficiência</h3>
             <p>
-              Projetos que combinam engenharia, conforto, eficiência e conectividade em
-              edificações e empreendimentos de uso misto.
+              Soluções em energias sustentáveis e uso inteligente da energia em edificações,
+              indústrias e infraestruturas críticas.
             </p>
             <ul>
-              <li>Projetos para empreendimentos residenciais, corporativos e híbridos.</li>
-              <li>Soluções para smart buildings e monitoramento em tempo real.</li>
-              <li>Estratégias de retrofit sustentável para ativos existentes.</li>
-              <li>Infraestruturas de suporte para ambientes de missão crítica, como salas técnicas e nós de infraestrutura digital.</li>
+              <li>Estudos e projetos em energia solar, eólica e outras fontes renováveis.</li>
+              <li>Estratégias de eficiência energética e otimização de consumo.</li>
+              <li>Arquiteturas energéticas para ambientes críticos e projetos associados a data centers.</li>
             </ul>
           </div>
+
           <div class="card">
-            <h3>TIC Aplicadas &amp; Governança Digital</h3>
+            <h3>Infraestrutura Digital & Cidades Inteligentes</h3>
             <p>
-              Tecnologias da Informação e Comunicação como base para transformação digital,
-              automação e inteligência de dados.
+              Apoio à concepção e implantação de infraestrutura digital e soluções conectadas
+              para cidades, empresas e territórios.
             </p>
             <ul>
-              <li>Plataformas digitais, integração de dados e automação de processos.</li>
-              <li>Governança de TI, segurança da informação e compliance regulatório.</li>
-              <li>Suporte a projetos de transformação digital e IA (HOLOS / HALO).</li>
-              <li>Integração tecnológica e governança de infraestrutura digital de missão crítica, em parceria com operadores e provedores de data centers.</li>
+              <li>Ambientes de TI e redes de monitoramento em tempo real.</li>
+              <li>Integração entre plataformas digitais, dados e automação.</li>
+              <li>Projetos associados a hubs tecnológicos e iniciativas de data center.</li>
             </ul>
           </div>
+
           <div class="card">
-            <h3>Tecnologias de Impacto Ambiental</h3>
+            <h3>Projetos Socioambientais & Impacto</h3>
             <p>
-              Inteligência aplicada à proteção de biomas, prevenção de desastres e apoio à
-              tomada de decisão.
+              Projetos que combinam tecnologia, inteligência territorial e proteção ambiental,
+              em alinhamento com iniciativas do Ecossistema Quartzgroup.
             </p>
             <ul>
-              <li>Monitoramento e prevenção de queimadas e eventos extremos.</li>
-              <li>Sistemas de apoio à decisão para órgãos públicos e gestores.</li>
-              <li>Inteligência territorial e ambiental (ex.: PRESERVAR / Aero-Q).</li>
-              <li>Avaliação e mitigação de impactos ambientais em infraestruturas tecnológicas, incluindo projetos de data centers e redes de telecomunicações.</li>
+              <li>Análise e monitoramento de impactos ambientais de soluções tecnológicas.</li>
+              <li>Projetos em biotecnologia, agrotecnologia e proteção de biomas.</li>
+              <li>Articulação com iniciativas como PRESERVAR e Aero-Q.</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATA CENTERS -->
+      <section id="data-centers">
+        <div class="section-heading">Data Centers</div>
+        <h2 class="section-title">Serviços para empresas e projetos de data center</h2>
+        <p class="section-lead">
+          O Centro-Oeste brasileiro vem se consolidando como região estratégica para implantação de data centers
+          e infraestrutura digital. A Techsol está posicionada nesse território e conhece de perto o cenário,
+          os atores e as condições técnicas necessárias para estruturar bons projetos.
+        </p>
+
+        <div class="highlight-box">
+          <p class="highlight-quote">
+            Estamos no Centro-Oeste, conhecemos bem o cenário e podemos atuar como consultores, mediadores,
+            integradores e prestadores de serviços para empresas e projetos de data center.
+          </p>
+        </div>
+
+        <div class="three-cols">
+          <div class="mini-card">
+            <h4>Consultoria de contexto e território</h4>
+            <p>
+              Leitura integrada do cenário regional: oferta de energia, infraestrutura urbana e logística,
+              conexões com governos, universidades e empresas locais.
+            </p>
+          </div>
+          <div class="mini-card">
+            <h4>Engenharia, energia & integração tecnológica</h4>
+            <p>
+              Apoio em soluções de energia sustentável, eficiência energética e integração de infraestrutura
+              de suporte, sempre em diálogo com equipes técnicas e parceiros de tecnologia.
+            </p>
+          </div>
+          <div class="mini-card">
+            <h4>Parcerias & projetos de P&D</h4>
+            <p>
+              Estruturação de projetos em parceria com instituições de pesquisa e inovação, conectando
+              demandas de data centers a oportunidades de P&D e desenvolvimento de soluções avançadas.
+            </p>
           </div>
         </div>
       </section>
@@ -865,142 +790,88 @@
       <!-- ECOSSISTEMA QUARTZGROUP -->
       <section id="ecossistema">
         <div class="section-heading">Ecossistema Quartzgroup</div>
-        <h2 class="section-title">Parte de um Ecossistema Integrado</h2>
+        <h2 class="section-title">Integração em uma arquitetura maior</h2>
         <p class="section-lead">
-          A Techsol faz parte do Ecossistema Quartzgroup, que conecta pesquisa, inovação,
-          formação e implementação em uma arquitetura viva e integrada.
+          A Techsol integra o Ecossistema Quartzgroup, que conecta estratégia, pesquisa, formação e implementação
+          em projetos de tecnologia, inteligência territorial e impacto socioambiental.
         </p>
 
         <div class="columns-2">
           <div>
             <p>
-              No centro do ecossistema, a Quartzgroup Technologies LLC atua como holding
-              global e guardiã da estratégia. O IFT – Instituto de Formação e Tecnologia
-              consolida a dimensão científico-educacional e o papel de ICT, enquanto a Techsol
-              conduz a engenharia aplicada e a implementação de projetos.
-            </p>
-            <p>
-              Outras unidades especializadas, como a JPI Advisory, a Incubatech, o laboratório
-              L.I.S.I., a Sinthesys Network, a plataforma Aero-Q e o projeto PRESERVAR,
-              complementam uma visão sistêmica, conectando diferentes setores, tecnologias e
-              territórios.
+              No ecossistema, diferentes unidades assumem papéis complementares. A Quartzgroup estrutura a visão
+              global, as arquiteturas conceituais e as parcerias internacionais. O IFT – Instituto de Formação
+              e Tecnologia ancora a formação e a pesquisa. A Techsol se conecta a essas frentes, trazendo a dimensão
+              da engenharia aplicada e das tecnologias em operação no território.
             </p>
           </div>
           <div>
-            <div class="pill">
-              <span class="pill-dot"></span>
-              Unidades do ecossistema
-            </div>
-            <div class="chip-row">
-              <span class="chip">Quartzgroup Technologies LLC</span>
-              <span class="chip">IFT – Instituto de Formação e Tecnologia</span>
-              <span class="chip">Techsol</span>
-              <span class="chip">JPI Advisory</span>
-              <span class="chip">Incubatech</span>
-              <span class="chip">L.I.S.I. Lab</span>
-              <span class="chip">Sinthesys Network</span>
-              <span class="chip">Aero-Q</span>
-              <span class="chip">PRESERVAR Cerrado</span>
-            </div>
-            <a
-              class="btn-secondary"
-              href="https://quartzgroup.io"
-              target="_blank"
-              rel="noopener"
-              style="margin-top:12px;"
-            >
-              Explorar o Ecossistema Quartzgroup
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJETOS & CASOS -->
-      <section id="projetos">
-        <div class="section-heading">Projetos &amp; Casos</div>
-        <h2 class="section-title">Projetos e frentes de atuação</h2>
-        <p class="section-lead">
-          Atuamos em projetos que conectam tecnologia, território e pessoas, em diferentes
-          níveis de complexidade e maturidade.
-        </p>
-
-        <div class="projects-list">
-          <div>
             <p>
-              Alguns exemplos de frentes que podem ser desenvolvidas a partir da Techsol e do
-              Ecossistema Quartzgroup:
-            </p>
-            <ul>
-              <li>
-                Monitoramento ambiental e prevenção a queimadas em biomas sensíveis.
-              </li>
-              <li>
-                Estruturação de hubs tecnológicos, industriais e logísticos com
-                inteligência de dados.
-              </li>
-              <li>
-                Soluções digitais para gestão pública, cidades inteligentes e desenvolvimento
-                regional.
-              </li>
-              <li>
-                Consultoria estratégica em transformação digital, governança de TI e
-                cibergovernança.
-              </li>
-              <li>
-                Estudos de viabilidade técnico-energética e ambiental para projetos de
-                infraestrutura digital e data centers sustentáveis no Centro-Oeste.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              À medida que novos projetos forem lançados, esta seção poderá destacar casos
-              específicos, como:
-            </p>
-            <ul>
-              <li>Hub Tecnológico integrado a distritos industriais e plataformas logísticas.</li>
-              <li>Projetos-piloto de monitoramento ambiental com sensores e IA.</li>
-              <li>Programas de apoio à transformação digital em governos locais.</li>
-              <li>
-                Iniciativas de inovação aberta em parceria com universidades e ICTs,
-                conectadas a infraestruturas de computação e data centers parceiros.
-              </li>
-            </ul>
-            <p style="font-size:0.8rem; color:var(--text-mute); margin-top:6px;">
-              *Esta área está preparada para evoluir para um portfólio completo de cases,
-              com cards individuais e documentação detalhada.*
+              A partir dessa integração, é possível desenhar projetos que combinam IA, dados, energia, infraestrutura
+              e conhecimento do território, criando caminhos para que conceitos avancem até protótipos, pilotos e
+              implementações com impacto mensurável.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- PARCERIAS & ICT -->
+      <!-- PARCERIAS -->
       <section id="parcerias">
-        <div class="section-heading">Parcerias &amp; ICT</div>
-        <h2 class="section-title">Parcerias estratégicas e atuação como ICT</h2>
+        <div class="section-heading">Parcerias</div>
+        <h2 class="section-title">Com quem nos conectamos</h2>
         <p class="section-lead">
-          A Techsol trabalha de forma integrada com o IFT – Instituto de Formação e Tecnologia,
-          que está em processo de credenciamento como ICT, viabilizando arranjos avançados de
-          pesquisa, desenvolvimento e inovação.
+          A Techsol trabalha em rede. Cada projeto é uma oportunidade de conectar empresas, governos e instituições
+          em torno de desafios concretos de energia, tecnologia, território e impacto socioambiental.
         </p>
 
-        <div class="partnership-box">
-          <p>
-            Essa integração permite estruturar projetos que combinam recursos públicos e
-            privados, convênios com universidades e centros de pesquisa, e acordos de P&amp;D
-            com empresas no Brasil e no exterior.
-          </p>
-          <ul style="margin-top:8px; padding-left:16px;">
-            <li>Projetos com recursos de fomento, editais e chamadas públicas.</li>
-            <li>Convênios com fundações, ICTs e universidades.</li>
-            <li>Acordos de P&amp;D com empresas de diferentes setores.</li>
-            <li>Estruturas de governança alinhadas à legislação de inovação.</li>
-            <li>Projetos de P&amp;D em infraestrutura digital, computação em nuvem e apoio a data centers, em conformidade com políticas nacionais e estaduais de inovação e IA.</li>
-          </ul>
-          <!-- TODO: ajustar o e-mail alvo quando tiver a caixa oficial de parcerias -->
-          <a class="btn-secondary" href="mailto:parcerias@techsolsolutions.com.br">
-            Propor parceria com a Techsol
-          </a>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Empresas & Operadores</h3>
+            <p>
+              Parcerias com empresas de tecnologia, energia, construção, indústria e operadores de infraestrutura
+              digital.
+            </p>
+            <ul>
+              <li>Projetos em energia sustentável e eficiência energética.</li>
+              <li>Integração de soluções digitais e de dados.</li>
+              <li>Serviços especializados para empresas e projetos de data center.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Governos & Setor Público</h3>
+            <p>
+              Cooperação com entes públicos em projetos de desenvolvimento regional, cidades inteligentes
+              e proteção ambiental.
+            </p>
+            <ul>
+              <li>Estruturação de projetos em energia e infraestrutura digital.</li>
+              <li>Projetos de tecnologia aplicada a políticas públicas.</li>
+              <li>Articulação com iniciativas do Ecossistema Quartzgroup.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Universidades & Instituições de Pesquisa</h3>
+            <p>
+              Projetos de pesquisa aplicada, inovação e formação em parceria com o IFT e outras instituições
+              acadêmicas.
+            </p>
+            <ul>
+              <li>Projetos de P&amp;D em energia e tecnologias aplicadas.</li>
+              <li>Iniciativas em inteligência territorial e ambiental.</li>
+              <li>Desenvolvimento conjunto de soluções para uso em campo.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Iniciativas do Ecossistema</h3>
+            <p>
+              Conexão direta com projetos estruturantes do Ecossistema Quartzgroup, em diferentes níveis de maturidade.
+            </p>
+            <ul>
+              <li>Apoio a projetos como HALO, PRESERVAR, Aero-Q e Centro Tecnológico.</li>
+              <li>Integração entre conceitos, protótipos e operação.</li>
+              <li>Desenvolvimento de casos de uso em conjunto com parceiros.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -1009,8 +880,8 @@
         <div class="section-heading">Contato</div>
         <h2 class="section-title">Fale com a Techsol</h2>
         <p class="section-lead">
-          Se você representa uma empresa, ICT, universidade, órgão público ou iniciativa
-          independente e deseja discutir um projeto, entre em contato.
+          Se você representa uma empresa, instituição pública, universidade ou iniciativa independente e deseja
+          discutir um projeto ou uma parceria, podemos conversar.
         </p>
 
         <div class="contact-grid">
@@ -1018,27 +889,28 @@
             <div class="contact-item">
               <div class="contact-label">Unidade</div>
               <div class="contact-highlight">Techsol – Soluções em Tecnologia</div>
-              <div>Unidade de engenharia aplicada do Ecossistema Quartzgroup.</div>
-            </div>
-            <div class="contact-item" style="margin-top:8px;">
-              <div class="contact-label">Ecossistema</div>
               <div>
-                Quartzgroup · IFT · Techsol · JPI Advisory · Incubatech · L.I.S.I. ·
-                Sinthesys Network · Aero-Q · PRESERVAR.
+                Empresa de engenharia e tecnologias aplicadas, integrante do Ecossistema Quartzgroup.
+              </div>
+            </div>
+            <div class="contact-item" style="margin-top:10px;">
+              <div class="contact-label">Região de atuação</div>
+              <div>
+                Atuação a partir do Centro-Oeste, com possibilidade de conexões nacionais e internacionais
+                via Ecossistema Quartzgroup.
               </div>
             </div>
           </div>
           <div>
             <div class="contact-item">
               <div class="contact-label">E-mail</div>
-              <!-- TODO: trocar para o e-mail definitivo Zoho quando configurado -->
               <div class="contact-highlight">
                 <a href="mailto:contato@techsolsolutions.com.br">
                   contato@techsolsolutions.com.br
                 </a>
               </div>
             </div>
-            <div class="contact-item" style="margin-top:8px;">
+            <div class="contact-item" style="margin-top:10px;">
               <div class="contact-label">Portais relacionados</div>
               <div>
                 <a href="https://quartzgroup.io" target="_blank" rel="noopener">
@@ -1050,19 +922,12 @@
                 </a>
               </div>
             </div>
-            <!-- TODO: quando tiver WhatsApp corporativo, troque o link abaixo -->
-            <!--
-            <div class="contact-item" style="margin-top:8px;">
-              <div class="contact-label">WhatsApp corporativo</div>
-              <div class="contact-highlight">
-                <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">
-                  +55 (00) 00000-0000
-                </a>
-              </div>
-            </div>
-            -->
           </div>
         </div>
+
+        <a class="btn-secondary" href="mailto:contato@techsolsolutions.com.br">
+          Iniciar uma conversa com a Techsol
+        </a>
       </section>
     </div>
   </main>
@@ -1071,7 +936,7 @@
     <div class="footer-inner">
       <div>
         &copy; <span id="year"></span> Techsol – Soluções em Tecnologia.
-        Parte do Ecossistema Quartzgroup.
+        Integra o Ecossistema Quartzgroup.
       </div>
       <div class="footer-links">
         <a href="https://quartzgroup.io" target="_blank" rel="noopener">Quartzgroup</a>
