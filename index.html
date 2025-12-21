@@ -9,21 +9,27 @@
 
   <style>
     :root {
-      --bg-body: #020617;
-      --bg-surface: #0b1120;
-      --bg-soft: #020617;
-      --accent: #38bdf8;
-      --accent-strong: #0ea5e9;
-      --accent-soft: rgba(56, 189, 248, 0.12);
-      --text-main: #e5e7eb;
-      --text-soft: #9ca3af;
-      --text-mute: #6b7280;
-      --border-soft: rgba(148, 163, 184, 0.3);
-      --card-border: rgba(148, 163, 184, 0.4);
-      --shadow-soft: 0 20px 50px rgba(15, 23, 42, 0.8);
+      /* Paleta Techsol */
+      --orange: #f7931e;
+      --orange-dark: #f57c00;
+      --blue: #00539f;
+      --blue-deep: #003b73;
+      --blue-light: #1da4ff;
+      --black: #000000;
+
+      --bg-body: #ffffff;
+      --bg-soft: #f5f5f7;
+
+      --text-main: #111827;
+      --text-soft: #4b5563;
+      --text-mute: #9ca3af;
+
+      --border-soft: #e5e7eb;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.06);
+
       --radius-lg: 18px;
       --radius-pill: 999px;
-      --nav-height: 70px;
+      --nav-height: 56px;
       --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, sans-serif;
     }
@@ -41,7 +47,7 @@
 
     body {
       font-family: var(--font-sans);
-      background: radial-gradient(circle at top, #020617 0, #020617 40%, #000 100%);
+      background: var(--bg-body);
       color: var(--text-main);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
@@ -62,26 +68,52 @@
       padding: 0 20px 40px;
     }
 
-    /* NAVBAR */
+    /* CABEÇALHO ESTILO UD / DSI */
 
     .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      backdrop-filter: blur(18px);
-      background: linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.96),
-        rgba(15, 23, 42, 0.9),
-        transparent
-      );
-      border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+      width: 100%;
+    }
+
+    /* Faixa superior com a marca */
+    .header-top {
+      background: var(--blue);
+      padding: 12px 0;
+    }
+
+    .header-top-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+    }
+
+    .header-top-logo {
+      height: 90px; /* logo maior (aprox. o dobro) */
+      width: auto;
+      display: block;
+    }
+
+    .header-top-text {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Faixa inferior com nome da unidade + menu */
+    .header-nav {
+      background: var(--blue-deep);
+      border-top: 3px solid var(--orange);
     }
 
     .nav-bar {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 10px 20px;
+      padding: 6px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -89,29 +121,17 @@
       height: var(--nav-height);
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .nav-title {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
-    .brand-logo {
-      height: 34px;
-      width: auto;
+    .nav-subtitle {
       display: block;
-    }
-
-    .brand-text h1 {
-      font-size: 1.1rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #e5e7eb;
-    }
-
-    .brand-text span {
-      display: block;
-      font-size: 0.85rem;
-      color: var(--text-soft);
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.9;
     }
 
     .nav-links {
@@ -123,8 +143,8 @@
 
     .nav-links a {
       position: relative;
-      color: var(--text-soft);
-      padding: 6px 0;
+      color: #e5e7eb;
+      padding: 4px 0;
     }
 
     .nav-links a::after {
@@ -135,12 +155,12 @@
       width: 0;
       height: 2px;
       border-radius: 999px;
-      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      background: linear-gradient(90deg, var(--orange), var(--blue-light));
       transition: width 0.18s ease-out;
     }
 
     .nav-links a:hover {
-      color: var(--text-main);
+      color: #ffffff;
     }
 
     .nav-links a:hover::after {
@@ -153,25 +173,26 @@
       gap: 8px;
       padding: 8px 16px;
       border-radius: var(--radius-pill);
-      background: linear-gradient(135deg, #22c55e, #38bdf8);
-      color: #020617;
+      background: var(--orange);
+      color: #ffffff;
       font-size: 0.9rem;
       font-weight: 600;
-      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
-      border: 1px solid rgba(15, 23, 42, 0.6);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.8);
     }
 
-    /* HERO */
+    /* HERO LOGO ABAIXO DO CABEÇALHO */
 
     .hero {
       padding-top: 40px;
       padding-bottom: 40px;
+      background: #ffffff;
     }
 
     .hero-inner {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
-      gap: 32px;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+      gap: 40px;
       align-items: center;
     }
 
@@ -179,7 +200,7 @@
       font-size: 0.9rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--blue);
       margin-bottom: 10px;
     }
 
@@ -187,11 +208,11 @@
       font-size: clamp(2.3rem, 4vw, 2.8rem);
       line-height: 1.15;
       margin-bottom: 16px;
+      color: var(--black);
     }
 
     .hero-gradient {
-      background: radial-gradient(circle at 0 0, #38bdf8 0, transparent 50%),
-        radial-gradient(circle at 100% 120%, #22c55e 0, transparent 60%);
+      background: linear-gradient(120deg, var(--orange-dark), var(--blue));
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -217,24 +238,25 @@
       font-size: 0.9rem;
       padding: 6px 12px;
       border-radius: var(--radius-pill);
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.8);
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
       color: var(--text-soft);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
     }
 
     .badge-dot {
       width: 7px;
       height: 7px;
       border-radius: 999px;
-      background: #22c55e;
-      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.35);
+      background: var(--orange);
+      box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.25);
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .btn-primary,
@@ -255,25 +277,27 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #22c55e, #38bdf8);
-      color: #020617;
-      box-shadow: 0 18px 40px rgba(56, 189, 248, 0.4);
+      background: var(--orange);
+      color: #ffffff;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
     }
 
     .btn-primary:hover {
+      background: var(--orange-dark);
       transform: translateY(-1px);
-      box-shadow: 0 24px 55px rgba(56, 189, 248, 0.45);
+      box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
     }
 
     .btn-ghost {
-      background: rgba(15, 23, 42, 0.9);
-      border-color: rgba(148, 163, 184, 0.55);
-      color: var(--text-main);
+      background: #ffffff;
+      border-color: var(--border-soft);
+      color: var(--text-soft);
     }
 
     .btn-ghost:hover {
-      background: rgba(15, 23, 42, 1);
-      border-color: var(--accent);
+      background: var(--bg-soft);
+      border-color: var(--blue);
+      color: var(--blue);
       transform: translateY(-1px);
     }
 
@@ -282,57 +306,43 @@
       color: var(--text-mute);
     }
 
+    /* Painel lateral com imagem "ONDE ATUAMOS" */
+
     .hero-panel {
-      background: radial-gradient(circle at 10% 0, rgba(56, 189, 248, 0.3), transparent 55%),
-        radial-gradient(circle at 90% 100%, rgba(34, 197, 94, 0.3), transparent 58%);
-      border-radius: 24px;
-      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid var(--border-soft);
       box-shadow: var(--shadow-soft);
-      padding: 18px 18px 16px;
+      overflow: hidden;
     }
 
-    .hero-panel-title {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #e5e7eb;
-      margin-bottom: 8px;
+    .hero-panel img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
-    .hero-panel-text {
-      font-size: 0.95rem;
-      color: var(--text-soft);
-      margin-bottom: 10px;
-    }
-
-    .hero-panel-tag {
-      display: inline-flex;
-      font-size: 0.85rem;
-      padding: 4px 10px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(148, 163, 184, 0.7);
-      background: rgba(15, 23, 42, 0.92);
-      color: var(--text-soft);
-    }
-
-    /* SHARED SECTION STYLES */
+    /* SEÇÕES GERAIS */
 
     section {
       padding: 36px 0;
-      border-top: 1px solid rgba(15, 23, 42, 0.85);
+      border-top: 1px solid var(--border-soft);
+      background: #ffffff;
     }
 
     .section-heading {
-      font-size: 0.9rem;
+      font-size: 1rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--text-mute);
+      color: var(--blue);
+      font-weight: 600;
       margin-bottom: 6px;
     }
 
     .section-title {
       font-size: 1.6rem;
       margin-bottom: 10px;
+      color: var(--black);
     }
 
     .section-lead {
@@ -349,43 +359,68 @@
       align-items: flex-start;
     }
 
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 11px;
-      border-radius: var(--radius-pill);
-      background: rgba(15, 23, 42, 0.96);
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      font-size: 0.9rem;
-      color: var(--text-soft);
-      margin-bottom: 12px;
-    }
-
-    .pill-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
+    /* CARDS – borda + preenchimento suave */
 
     .card-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      gap: 18px;
     }
 
     .card {
-      background: rgba(15, 23, 42, 0.96);
+      position: relative;
       border-radius: var(--radius-lg);
-      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-soft);
       padding: 16px 16px 14px;
-      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 4px solid transparent;
+      pointer-events: none;
+    }
+
+    .card-grid .card:nth-child(odd)::before {
+      border-top-color: var(--blue);
+    }
+
+    .card-grid .card:nth-child(odd) {
+      background: linear-gradient(
+        to bottom,
+        rgba(247, 147, 30, 0.10),
+        rgba(247, 147, 30, 0.03)
+      );
+    }
+
+    .card-grid .card:nth-child(even)::before {
+      border-top-color: var(--orange);
+    }
+
+    .card-grid .card:nth-child(even) {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 83, 159, 0.10),
+        rgba(0, 83, 159, 0.03)
+      );
     }
 
     .card h3 {
       font-size: 1.05rem;
       margin-bottom: 6px;
+      color: var(--black);
+      position: relative;
+      z-index: 1;
+    }
+
+    .card p,
+    .card ul {
+      position: relative;
+      z-index: 1;
     }
 
     .card p {
@@ -410,37 +445,79 @@
 
     .highlight-box {
       border-radius: 18px;
-      border: 1px solid rgba(148, 163, 184, 0.6);
-      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid var(--border-soft);
+      background: var(--bg-soft);
       padding: 16px 16px 14px;
       margin-bottom: 18px;
     }
 
     .highlight-quote {
       font-size: 1rem;
-      color: var(--accent-strong);
+      color: var(--blue);
       font-weight: 500;
     }
 
     .three-cols {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
+      gap: 18px;
     }
 
     .mini-card {
-      background: rgba(15, 23, 42, 0.96);
-      border-radius: 14px;
-      border: 1px solid rgba(148, 163, 184, 0.6);
+      border-radius: 16px;
       padding: 12px 12px 10px;
       font-size: 0.95rem;
       color: var(--text-soft);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mini-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 4px solid transparent;
+      pointer-events: none;
+    }
+
+    .three-cols .mini-card:nth-child(odd)::before {
+      border-top-color: var(--blue);
+    }
+
+    .three-cols .mini-card:nth-child(odd) {
+      background: linear-gradient(
+        to bottom,
+        rgba(247, 147, 30, 0.10),
+        rgba(247, 147, 30, 0.03)
+      );
+    }
+
+    .three-cols .mini-card:nth-child(even)::before {
+      border-top-color: var(--orange);
+    }
+
+    .three-cols .mini-card:nth-child(even) {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 83, 159, 0.10),
+        rgba(0, 83, 159, 0.03)
+      );
     }
 
     .mini-card h4 {
-      font-size: 1rem;
+      font-size: 1.02rem;
       margin-bottom: 4px;
-      color: var(--text-main);
+      color: var(--black);
+      position: relative;
+      z-index: 1;
+    }
+
+    .mini-card p {
+      position: relative;
+      z-index: 1;
     }
 
     /* PARCERIAS & CONTATO */
@@ -458,16 +535,17 @@
     }
 
     .contact-label {
-      font-size: 0.85rem;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.15em;
-      color: var(--text-mute);
-      margin-bottom: 2px;
+      color: var(--blue);
+      margin-bottom: 4px;
+      font-weight: 600;
     }
 
     .contact-highlight {
       font-size: 1rem;
-      color: var(--text-main);
+      color: var(--black);
       margin-bottom: 3px;
     }
 
@@ -479,34 +557,95 @@
       border-radius: var(--radius-pill);
       font-size: 0.95rem;
       padding: 8px 16px;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      margin-top: 8px;
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      margin-top: 12px;
+      background: #ffffff;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
     }
 
     .btn-secondary:hover {
-      background: rgba(8, 47, 73, 0.8);
+      background: var(--bg-soft);
     }
 
-    /* FOOTER */
+    /* RODAPÉ ESTILO UD */
 
     footer {
-      border-top: 1px solid rgba(15, 23, 42, 0.95);
-      background: #020617;
-      padding: 16px 0 20px;
-      font-size: 0.9rem;
-      color: var(--text-mute);
+      margin-top: 0;
     }
 
-    .footer-inner {
+    .footer-main {
+      background: var(--blue);
+      color: #ffffff;
+      padding: 28px 0;
+      border-top: 4px solid var(--orange);
+    }
+
+    .footer-main-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+      gap: 32px;
+    }
+
+    .footer-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    .footer-main-inner p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .footer-main-inner a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .footer-main-inner a:hover {
+      color: #ffd28a;
+    }
+
+    .footer-list {
+      margin-top: 6px;
+    }
+
+    .footer-list a {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+      background: #ffffff;
+      border-top: 1px solid var(--border-soft);
+      padding: 10px 0 14px;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .footer-bottom-inner {
       max-width: 1120px;
       margin: 0 auto;
       padding: 0 20px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 10px;
       align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom span.brand-accent {
+      background: linear-gradient(90deg, var(--orange), var(--blue-light));
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 600;
     }
 
     .footer-links {
@@ -521,16 +660,17 @@
     }
 
     .footer-links a:hover {
-      color: var(--accent);
+      color: var(--blue);
     }
 
-    /* RESPONSIVE */
+    /* RESPONSIVO */
 
     @media (max-width: 900px) {
       .hero-inner,
       .columns-2,
       .card-grid,
-      .contact-grid {
+      .contact-grid,
+      .footer-main-inner {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -542,15 +682,16 @@
         padding-top: 28px;
       }
 
-      .hero-panel {
-        order: -1;
-      }
-
       .nav-links {
         display: none;
       }
 
       .nav-bar {
+        padding-inline: 16px;
+        height: auto;
+      }
+
+      .header-top-inner {
         padding-inline: 16px;
       }
     }
@@ -566,25 +707,33 @@
 
 <body>
   <header class="site-header">
-    <div class="nav-bar">
-      <div class="brand">
-        <img src="logotechsol.png" alt="Logotipo Techsol" class="brand-logo" />
-        <div class="brand-text">
-          <h1>TECHSOL</h1>
-          <span>Engenharia & tecnologias aplicadas</span>
-        </div>
+    <!-- Faixa superior com logo Techsol -->
+    <div class="header-top">
+      <div class="header-top-inner">
+        <img src="logotechsol.png" alt="Logotipo Techsol" class="header-top-logo" />
+        <div class="header-top-text">Techsol · Soluções em Tecnologia</div>
       </div>
-      <nav class="nav-links">
-        <a href="#home">Início</a>
-        <a href="#quem-somos">Quem Somos</a>
-        <a href="#atuacao">Atuação</a>
-        <a href="#data-centers">Data Centers</a>
-        <a href="#ecossistema">Ecossistema</a>
-        <a href="#parcerias">Parcerias</a>
-        <a href="#contato" class="nav-cta">
-          <span>Falar com a Techsol</span>
-        </a>
-      </nav>
+    </div>
+
+    <!-- Faixa inferior com nome e navegação -->
+    <div class="header-nav">
+      <div class="nav-bar">
+        <div class="nav-title">
+          Techsol Soluções em Tecnologia
+          <span class="nav-subtitle">Engenharia aplicada · Energia · Infraestrutura digital</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#home">Início</a>
+          <a href="#quem-somos">Quem Somos</a>
+          <a href="#atuacao">Atuação</a>
+          <a href="#data-centers">Data Centers</a>
+          <a href="#ecossistema">Ecossistema</a>
+          <a href="#parcerias">Parcerias</a>
+          <a href="#contato" class="nav-cta">
+            <span>Falar com a Techsol</span>
+          </a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -635,15 +784,9 @@
             </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Resumo de atuação da Techsol">
-            <div class="hero-panel-title">Onde atuamos</div>
-            <p class="hero-panel-text">
-              Tecnologia aplicada, energia renovável, infraestrutura digital e impacto ambiental –
-              com operações a partir do Centro-Oeste e conexão com parceiros no Brasil e no exterior.
-            </p>
-            <div class="hero-panel-tag">
-              Integra o Ecossistema Quartzgroup · Em diálogo constante com o IFT – Instituto de Formação e Tecnologia
-            </div>
+          <!-- Painel lateral com a nova imagem "onde-atuamos" -->
+          <aside class="hero-panel" aria-label="Onde atuamos">
+            <img src="onde-atuamos.png" alt="Onde atuamos – Techsol" />
           </aside>
         </div>
       </section>
@@ -906,7 +1049,7 @@
             </div>
             <div class="contact-item" style="margin-top:10px;">
               <div class="contact-label">Portais relacionados</div>
-              <div>
+              <div class="contact-highlight">
                 <a href="https://quartzgroup.io" target="_blank" rel="noopener">
                   quartzgroup.io
                 </a>
@@ -927,22 +1070,61 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <div>
-        &copy; <span id="year"></span> Techsol – Soluções em Tecnologia.
-        Integra o Ecossistema Quartzgroup.
+    <!-- Bloco azul principal, estilo UD -->
+    <div class="footer-main">
+      <div class="footer-main-inner">
+        <div>
+          <div class="footer-title">Nossa missão</div>
+          <p>
+            A Techsol Soluções em Tecnologia existe para conectar engenharia, energia e tecnologias aplicadas
+            às demandas concretas de empresas, governos e instituições. Atuando a partir do Centro-Oeste e
+            integrada ao Ecossistema Quartzgroup, busca transformar conceitos em projetos, protótipos e
+            implementações com impacto mensurável no território.
+          </p>
+          <p style="margin-top:8px;">
+            Para falar sobre projetos, oportunidades de parceria ou iniciativas em energia, infraestrutura digital
+            e tecnologias aplicadas:
+            <br />
+            <a href="mailto:contato@techsolsolutions.com.br">contato@techsolsolutions.com.br</a>
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Conexões e portais</div>
+          <p>
+            A Techsol integra um ecossistema que reúne estratégia, pesquisa, formação e implementação em projetos
+            de tecnologia e inteligência territorial.
+          </p>
+          <div class="footer-list">
+            <a href="https://quartzgroup.io" target="_blank" rel="noopener">
+              quartzgroup.io – Ecossistema Quartzgroup
+            </a>
+            <a href="https://ift-institute.org" target="_blank" rel="noopener">
+              ift-institute.org – Instituto de Formação e Tecnologia
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="https://quartzgroup.io" target="_blank" rel="noopener">Quartzgroup</a>
-        <a href="https://ift-institute.org" target="_blank" rel="noopener">IFT</a>
-        <a href="#home">Voltar ao topo</a>
+    </div>
+
+    <!-- Faixa inferior enxuta -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          &copy; <span id="year"></span>
+          <span class="brand-accent">Techsol – Soluções em Tecnologia</span>.
+          Integra o Ecossistema Quartzgroup.
+        </div>
+        <div class="footer-links">
+          <a href="#home">Voltar ao topo</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Atualiza ano automaticamente no rodapé
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
+
